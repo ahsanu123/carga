@@ -4619,7 +4619,7 @@
 	)
 	(text_box "IRLZ44N"
 		(exclude_from_sim no)
-		(at 149.86 193.04 0)
+		(at 151.13 193.04 0)
 		(size 41.91 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4641,7 +4641,7 @@
 	)
 	(text_box "Solenoid Connector"
 		(exclude_from_sim no)
-		(at 149.86 204.47 0)
+		(at 151.13 204.47 0)
 		(size 41.91 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4663,7 +4663,7 @@
 	)
 	(text_box "ADuM1234"
 		(exclude_from_sim no)
-		(at 149.86 180.34 0)
+		(at 151.13 180.34 0)
 		(size 41.91 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4685,7 +4685,7 @@
 	)
 	(text_box "L298"
 		(exclude_from_sim no)
-		(at 238.76 167.64 0)
+		(at 240.03 167.64 0)
 		(size 41.91 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4707,7 +4707,7 @@
 	)
 	(text_box "MCP23017"
 		(exclude_from_sim no)
-		(at 194.31 154.94 0)
+		(at 195.58 154.94 0)
 		(size 86.36 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4729,7 +4729,7 @@
 	)
 	(text_box "Motor Output Connector"
 		(exclude_from_sim no)
-		(at 238.76 180.34 0)
+		(at 240.03 180.34 0)
 		(size 41.91 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4751,7 +4751,7 @@
 	)
 	(text_box "TXS0108"
 		(exclude_from_sim no)
-		(at 149.86 154.94 0)
+		(at 151.13 154.94 0)
 		(size 41.91 22.86)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4773,7 +4773,7 @@
 	)
 	(text_box "Limit Switch Connector"
 		(exclude_from_sim no)
-		(at 194.31 167.64 0)
+		(at 195.58 167.64 0)
 		(size 41.91 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4795,7 +4795,7 @@
 	)
 	(text_box "ESP32"
 		(exclude_from_sim no)
-		(at 149.86 142.24 0)
+		(at 151.13 142.24 0)
 		(size 130.81 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -5002,6 +5002,12 @@
 		(uuid "a762a259-2780-4aaf-b0b4-be434e7c88a1")
 	)
 	(junction
+		(at 274.32 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8857b48-14ea-45fa-ac12-92cec8870256")
+	)
+	(junction
 		(at 209.55 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5147,7 +5153,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 86.36) (xy 257.81 86.36)
+			(xy 314.96 133.35) (xy 312.42 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5307,7 +5313,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 83.82) (xy 257.81 83.82)
+			(xy 314.96 130.81) (xy 312.42 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5504,6 +5510,16 @@
 			(type default)
 		)
 		(uuid "20488f53-ecb3-4537-b864-b759fdb70d67")
+	)
+	(wire
+		(pts
+			(xy 267.97 66.04) (xy 267.97 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20b022d1-c9a0-4cff-afa1-72a37cca641b")
 	)
 	(wire
 		(pts
@@ -5987,7 +6003,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 69.85) (xy 257.81 69.85)
+			(xy 314.96 116.84) (xy 312.42 116.84)
 		)
 		(stroke
 			(width 0)
@@ -6047,7 +6063,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 63.5) (xy 274.32 78.74)
+			(xy 274.32 63.5) (xy 274.32 64.77)
 		)
 		(stroke
 			(width 0)
@@ -6164,6 +6180,16 @@
 			(type default)
 		)
 		(uuid "5cb83660-5bf8-405e-b38c-12b72575f099")
+	)
+	(wire
+		(pts
+			(xy 267.97 64.77) (xy 274.32 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ccf76c1-b291-44ee-9680-c71063fdb34a")
 	)
 	(wire
 		(pts
@@ -6294,6 +6320,16 @@
 			(type default)
 		)
 		(uuid "6a52ad18-374d-4637-a569-e598eb363e81")
+	)
+	(wire
+		(pts
+			(xy 274.32 64.77) (xy 274.32 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af09733-9abe-4f2d-9fa5-f45d7aa2f356")
 	)
 	(wire
 		(pts
@@ -6554,6 +6590,16 @@
 			(type default)
 		)
 		(uuid "82f7bb24-65ee-4385-92d6-0f4cb5f9f092")
+	)
+	(wire
+		(pts
+			(xy 267.97 73.66) (xy 267.97 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83c5db10-7adf-4177-950d-95a099f4483a")
 	)
 	(wire
 		(pts
@@ -6934,16 +6980,6 @@
 			(type default)
 		)
 		(uuid "a1d22e65-a87b-49b1-a4cb-212dfe1ddc37")
-	)
-	(wire
-		(pts
-			(xy 359.41 57.15) (xy 367.03 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2c7322f-629d-4ad5-a39d-ce977a7cb3e1")
 	)
 	(wire
 		(pts
@@ -7407,7 +7443,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 57.15) (xy 367.03 58.42)
+			(xy 359.41 55.88) (xy 359.41 59.69)
 		)
 		(stroke
 			(width 0)
@@ -7437,7 +7473,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 72.39) (xy 257.81 72.39)
+			(xy 314.96 119.38) (xy 312.42 119.38)
 		)
 		(stroke
 			(width 0)
@@ -7647,16 +7683,6 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 57.15) (xy 359.41 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2ec0a43-6b81-4334-97ab-b328d0a56097")
-	)
-	(wire
-		(pts
 			(xy 139.7 102.87) (xy 123.19 102.87)
 		)
 		(stroke
@@ -7694,16 +7720,6 @@
 			(type default)
 		)
 		(uuid "f427d270-27e4-46ec-9d3a-3255600a4dcf")
-	)
-	(wire
-		(pts
-			(xy 367.03 58.42) (xy 369.57 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5b208d5-6339-41d1-acf0-1846196c5948")
 	)
 	(wire
 		(pts
@@ -8858,7 +8874,7 @@
 	)
 	(symbol
 		(lib_id "power:VDDA")
-		(at 260.35 83.82 0)
+		(at 314.96 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8867,7 +8883,7 @@
 		(fields_autoplaced yes)
 		(uuid "1175a0de-d4b9-4ee8-9788-32e84b196104")
 		(property "Reference" "#PWR024"
-			(at 260.35 87.63 0)
+			(at 314.96 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8876,7 +8892,7 @@
 			)
 		)
 		(property "Value" "VDDB"
-			(at 260.35 80.01 0)
+			(at 314.96 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8884,7 +8900,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 83.82 0)
+			(at 314.96 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8893,7 +8909,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 83.82 0)
+			(at 314.96 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8902,7 +8918,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDDA\""
-			(at 260.35 83.82 0)
+			(at 314.96 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9927,6 +9943,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 267.97 69.85 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3335ac6b-d685-45a3-ac69-b05a5cad2f55")
+		(property "Reference" "C3"
+			(at 266.7 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 266.7 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 267.0048 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 267.97 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e136776a-9f4d-425a-813e-0e6c327e718f")
+		)
+		(pin "2"
+			(uuid "0a0ce704-7588-4ed7-b40d-88113745ae28")
+		)
+		(instances
+			(project "carga-driver"
+				(path "/11d31181-5c23-445f-b117-2be40d0a6fe8"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDA")
 		(at 86.36 193.04 0)
 		(mirror y)
@@ -10828,7 +10914,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 252.73 69.85 0)
+		(at 307.34 116.84 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10837,7 +10923,7 @@
 		(dnp no)
 		(uuid "57860883-2de8-4866-b821-7cf66fc194df")
 		(property "Reference" "J6"
-			(at 250.19 69.8499 0)
+			(at 304.8 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10846,7 +10932,7 @@
 			)
 		)
 		(property "Value" "VDDAConn"
-			(at 250.19 72.3899 0)
+			(at 304.8 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10855,7 +10941,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
-			(at 252.73 69.85 0)
+			(at 307.34 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10864,7 +10950,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 69.85 0)
+			(at 307.34 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10873,7 +10959,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 252.73 69.85 0)
+			(at 307.34 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12276,7 +12362,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 252.73 83.82 0)
+		(at 307.34 130.81 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12285,7 +12371,7 @@
 		(dnp no)
 		(uuid "87f18b37-858b-4588-89bb-ddf5da83f4b7")
 		(property "Reference" "J4"
-			(at 250.19 83.8199 0)
+			(at 304.8 130.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12294,7 +12380,7 @@
 			)
 		)
 		(property "Value" "VDDBConn"
-			(at 250.19 86.3599 0)
+			(at 304.8 133.3499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12303,7 +12389,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
-			(at 252.73 83.82 0)
+			(at 307.34 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12312,7 +12398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 83.82 0)
+			(at 307.34 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12321,7 +12407,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 252.73 83.82 0)
+			(at 307.34 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13415,7 +13501,7 @@
 	)
 	(symbol
 		(lib_id "power:VDDA")
-		(at 369.57 58.42 0)
+		(at 359.41 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13424,7 +13510,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f19771a-2f18-42a7-97ad-f67d89fd1a65")
 		(property "Reference" "#PWR017"
-			(at 369.57 62.23 0)
+			(at 359.41 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13433,7 +13519,7 @@
 			)
 		)
 		(property "Value" "VDDB"
-			(at 369.57 54.61 0)
+			(at 359.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13441,7 +13527,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 369.57 58.42 0)
+			(at 359.41 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13450,7 +13536,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 369.57 58.42 0)
+			(at 359.41 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13459,7 +13545,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDDA\""
-			(at 369.57 58.42 0)
+			(at 359.41 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13792,7 +13878,7 @@
 	)
 	(symbol
 		(lib_id "power:VDDA")
-		(at 260.35 69.85 0)
+		(at 314.96 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13801,7 +13887,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9d6169f-aa60-4327-9d19-508f917b44f3")
 		(property "Reference" "#PWR021"
-			(at 260.35 73.66 0)
+			(at 314.96 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13810,7 +13896,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 260.35 66.04 0)
+			(at 314.96 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13818,7 +13904,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 69.85 0)
+			(at 314.96 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13827,7 +13913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 69.85 0)
+			(at 314.96 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13836,7 +13922,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDDA\""
-			(at 260.35 69.85 0)
+			(at 314.96 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14011,7 +14097,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 260.35 72.39 0)
+		(at 314.96 119.38 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14020,7 +14106,7 @@
 		(dnp no)
 		(uuid "bcb67be2-c568-4ca2-9380-35b2af214c02")
 		(property "Reference" "#PWR022"
-			(at 260.35 78.74 0)
+			(at 314.96 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14029,7 +14115,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 260.35 76.454 0)
+			(at 314.96 123.444 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14037,7 +14123,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 72.39 0)
+			(at 314.96 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14046,7 +14132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 72.39 0)
+			(at 314.96 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14055,7 +14141,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 260.35 72.39 0)
+			(at 314.96 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14070,6 +14156,73 @@
 			(project "carga-driver"
 				(path "/11d31181-5c23-445f-b117-2be40d0a6fe8"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 267.97 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c073abe0-a0c8-47bd-bc01-b4ef6bf99963")
+		(property "Reference" "#PWR029"
+			(at 267.97 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 267.97 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c8740a0-e3f9-4b66-8fed-bea9460bc0ab")
+		)
+		(instances
+			(project "carga-driver"
+				(path "/11d31181-5c23-445f-b117-2be40d0a6fe8"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -14939,7 +15092,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 260.35 86.36 0)
+		(at 314.96 133.35 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14948,7 +15101,7 @@
 		(dnp no)
 		(uuid "e8860e7c-a5c9-43b5-aed0-a156c450753a")
 		(property "Reference" "#PWR023"
-			(at 260.35 92.71 0)
+			(at 314.96 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14957,7 +15110,7 @@
 			)
 		)
 		(property "Value" "GNDB"
-			(at 260.35 90.424 0)
+			(at 314.96 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14965,7 +15118,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 86.36 0)
+			(at 314.96 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14974,7 +15127,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 86.36 0)
+			(at 314.96 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14983,7 +15136,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 260.35 86.36 0)
+			(at 314.96 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)

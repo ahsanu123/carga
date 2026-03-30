@@ -86,9 +86,9 @@ async fn main(spawner: Spawner) {
     let lcd_rst = peripherals.GPIO14;
     let lcd_blk = peripherals.GPIO16;
 
-    let scl_mosi = peripherals.GPIO13;
+    let scl_mosi = peripherals.GPIO11;
     let scl_sck = peripherals.GPIO12;
-    let scl_miso = peripherals.GPIO11;
+    let scl_miso = peripherals.GPIO13;
 
     let dma_channel = peripherals.DMA_CH0;
 
