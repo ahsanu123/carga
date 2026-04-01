@@ -16,7 +16,7 @@ use esp_radio::ble::controller::BleConnector;
 use esp_storage::FlashStorage;
 
 // esp_println is important for defmt linker
-use {esp_alloc as _, esp_backtrace as _, esp_println as _};
+use {esp_backtrace as _, esp_println as _};
 
 use embassy_futures::join::join;
 use embassy_futures::select::select;
@@ -124,12 +124,14 @@ pub async fn ble_bas_peripheral_bonding_run<C, RNG, S>(
 
     let mut map_storage = MapStorage::<(), _, _>::new(
         storage,
-        MapConfig::new(0..S::ERASE_SIZE as u32 * 2),
+        MapConfig::new(0x200000..0x200000 + (S::ERASE_SIZE as u32 * 20)),
         NoCache::new(),
     );
-    let mut data_buffer = [0; 32];
-    let mut bond_stored = if let Some(StoredBondInformation(bond_info)) =
-        map_storage.fetch_item(&mut data_buffer, &()).await.unwrap()
+    let mut data_buffer = [0; 32 * 10];
+    let mut bond_stored = if let Some(StoredBondInformation(bond_info)) = map_storage
+        .fetch_item(&mut data_buffer, &())
+        .await
+        .expect("fail to fetch item from data buffer")
     {
         info!("Bond stored. Adding to stack.");
         stack.add_bond_information(bond_info).unwrap();
@@ -147,14 +149,14 @@ pub async fn ble_bas_peripheral_bonding_run<C, RNG, S>(
 
     info!("Starting advertising and GATT service");
     let server = Server::new_with_config(GapConfig::Peripheral(PeripheralConfig {
-        name: "TrouBLE",
+        name: "carga-server",
         appearance: &appearance::human_interface_device::GENERIC_HUMAN_INTERFACE_DEVICE,
     }))
     .unwrap();
 
     let _ = join(ble_task(runner), async {
         loop {
-            match advertise("Trouble Example", &mut peripheral, &server).await {
+            match advertise("carga", &mut peripheral, &server).await {
                 Ok(conn) => {
                     // Allow bondable if no bond is stored.
                     conn.raw().set_bondable(!bond_stored).unwrap();
@@ -173,8 +175,6 @@ pub async fn ble_bas_peripheral_bonding_run<C, RNG, S>(
                     info!("Connection dropped");
                 }
                 Err(e) => {
-                    #[cfg(feature = "defmt")]
-                    let e = defmt::Debug2Format(&e);
                     panic!("[adv] error: {:?}", e);
                 }
             }
@@ -201,8 +201,6 @@ pub async fn ble_bas_peripheral_bonding_run<C, RNG, S>(
 async fn ble_task<C: Controller, P: PacketPool>(mut runner: Runner<'_, C, P>) {
     loop {
         if let Err(e) = runner.run().await {
-            #[cfg(feature = "defmt")]
-            let e = defmt::Debug2Format(&e);
             panic!("[ble_task] error: {:?}", e);
         }
     }
@@ -341,20 +339,22 @@ async fn custom_task<C: Controller, P: PacketPool>(
 #[esp_rtos::main]
 async fn main(_s: Spawner) {
     let peripherals = esp_hal::init(esp_hal::Config::default().with_cpu_clock(CpuClock::max()));
-    esp_alloc::heap_allocator!(size: 72 * 1024);
+
+    esp_alloc::heap_allocator!(size: 80 * 1024);
     let timg0 = TimerGroup::new(peripherals.TIMG0);
 
     esp_rtos::start(timg0.timer0);
 
+    info!("after init timer 0");
+
     let _trng_source = TrngSource::new(peripherals.RNG, peripherals.ADC1);
     let mut trng = Trng::try_new().unwrap();
 
-    let bluetooth = peripherals.BT;
-    // let controller = esp_radio::init().unwrap();
+    info!("after init trng");
     //
-    // let connector = BleConnector::new(&controller, bluetooth, BleConfig::default()).unwrap();
-    // let controller: ExternalController<_, 20> = ExternalController::new(connector);
-    let connector = BleConnector::new(bluetooth, Default::default()).unwrap();
+    let bluetooth = peripherals.BT;
+    let connector =
+        BleConnector::new(bluetooth, BleConfig::default().with_max_connections(2)).unwrap();
     let controller: ExternalController<_, 20> = ExternalController::new(connector);
     // Initialize the flash
     let mut flash =
